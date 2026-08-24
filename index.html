@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -268,6 +268,20 @@
         color: #666;
       }
 
+      .gallery-preview {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin: 1.5rem 0;
+      }
+
+      .gallery-preview img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
       .skills {
         display: flex;
         flex-wrap: wrap;
@@ -493,6 +507,10 @@
           font-size: 0.9rem;
           padding: 0.4rem 0.8rem;
         }
+
+        .gallery-preview {
+          grid-template-columns: 1fr;
+        }
       }
 
       @media (min-width: 1200px) {
@@ -636,6 +654,7 @@
           <li>
             <a href="#projects" aria-label="Projects section">Projects</a>
           </li>
+          <li><a href="gallery.html" aria-label="Open gallery">Gallery</a></li>
           <li><a href="#skills" aria-label="Skills section">Skills</a></li>
           <li><a href="#contact" aria-label="Contact section">Contact</a></li>
         </ul>
@@ -689,6 +708,34 @@
         </div> -->
         <a href="projects.html" class="read-more-link">
           View All Projects
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </section>
+
+      <section id="gallery">
+        <h2>Gallery</h2>
+        <p>
+          Snapshots from events, ideas, and moments along my learning journey.
+        </p>
+        <div class="gallery-preview">
+          <img
+            src="./Images/Enginnering Fest -2083/EF1.webp"
+            alt="Engineering Fest [2083] memory"
+            loading="lazy"
+          />
+          <img
+            src="./Images/Enterpreneurship/E1.webp"
+            alt="Entrepreneurship [2082] event memory"
+            loading="lazy"
+          />
+          <img
+            src="./Images/hackathon/h1.webp"
+            alt="Hackathon [2082] memory"
+            loading="lazy"
+          />
+        </div>
+        <a href="gallery.html" class="read-more-link">
+          Open Full Gallery
           <i class="fas fa-arrow-right"></i>
         </a>
       </section>

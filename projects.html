@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -212,7 +212,7 @@
         <h2>1st Webpage</h2>
         <img
           height="300px"
-          width = "300px"
+          width="300px"
           src="./Images/emoji1.webp"
           alt="First Webpage"
           class="project-image"
@@ -248,7 +248,7 @@
         <div class="project-links">
           <a href="#" class="project-link">
             <i class="fab fa-github"></i>
-            <span>View Code</span> 
+            <span>View Code</span>
           </a>
           <a href="./Projects/Yuba_Pro.apk" class="project-link">
             <i class="fas fa-external-link-alt"></i>
@@ -256,37 +256,146 @@
           </a>
         </div>
       </div> -->
-
-      <!-- <div class="project-card">
-        <h2>MU App</h2>
+      <div class="project-card">
+        <h2>Profile App</h2>
         <img
-          src="./Images/MU_Logooo.webp"
-          alt=" MU Web App"
+          src="./Images/logos/profile_app_icon.webp"
+          alt="myprofile"
           class="project-image"
           loading="lazy"
         />
-        <p>
-          Developed a simple web app using java in andriod studio that loads MU
-          official website.
-        </p>
+        <p>Developed a simple profile UI app.</p>
+        <div class="tech-stack">
+          <span class="tech-tag">Flutter</span>
+        </div>
         <div class="project-links">
           <a href="#" class="project-link">
             <i class="fab fa-github"></i>
             <span>View Code</span>
           </a>
-          <a href="./Projects/MU_By_Yuba.apk" class="project-link">
+          <a href="./Projects/my profile.apk" class="project-link">
             <i class="fas fa-external-link-alt"></i>
             <span>Download</span>
           </a>
         </div>
       </div>
-    </div> -->
+
+      <div class="project-card">
+        <h2>BMI App</h2>
+        <img
+          src="./Images/logos/bmi.webp"
+          alt="bmi"
+          class="project-image"
+          loading="lazy"
+        />
+        <p>Developed a simple BMI calculator app.</p>
+        <div class="tech-stack">
+          <span class="tech-tag">Flutter</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">
+            <i class="fab fa-github"></i>
+            <span>View Code</span>
+          </a>
+          <a href="./Projects/bmi.apk" class="project-link">
+            <i class="fas fa-external-link-alt"></i>
+            <span>Download</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h2>RPS Game</h2>
+        <img
+          src="./Images/logos/rps.webp"
+          alt="rps"
+          class="project-image"
+          loading="lazy"
+        />
+        <p>Developed a simple rps game.</p>
+        <div class="tech-stack">
+          <span class="tech-tag">Flutter</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">
+            <i class="fab fa-github"></i>
+            <span>View Code</span>
+          </a>
+          <a href="./Projects/rps.apk" class="project-link">
+            <i class="fas fa-external-link-alt"></i>
+            <span>Download</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h2>Weather App</h2>
+        <img
+          src="./Images/logos/weather.webp"
+          alt="Weather"
+          class="project-image"
+          loading="lazy"
+        />
+        <p>Developed a simple weather app.</p>
+        <div class="tech-stack">
+          <span class="tech-tag">Flutter</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">
+            <i class="fab fa-github"></i>
+            <span>View Code</span>
+          </a>
+          <a href="./Projects/weather.apk" class="project-link">
+            <i class="fas fa-external-link-alt"></i>
+            <span>Download</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h2>Todo App</h2>
+        <img src="" alt="todo" class="project-image" loading="lazy" />
+        <p>Developed a simple todo app.</p>
+        <div class="tech-stack">
+          <span class="tech-tag">Flutter</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">
+            <i class="fab fa-github"></i>
+            <span>View Code</span>
+          </a>
+          <a href="./Projects/todoApp.apk" class="project-link">
+            <i class="fas fa-external-link-alt"></i>
+            <span>Download</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h2>News App</h2>
+        <img src="" alt="News" class="project-image" loading="lazy" />
+        <p>Developed a simple weather app.</p>
+        <div class="tech-stack">
+          <span class="tech-tag">Flutter</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">
+            <i class="fab fa-github"></i>
+            <span>View Code</span>
+          </a>
+          <a href="./Projects/newsApp.apk" class="project-link">
+            <i class="fas fa-external-link-alt"></i>
+            <span>Download</span>
+          </a>
+        </div>
+      </div>
+    </div>
 
     <script>
       // Dark mode toggle
       const themeToggle = document.querySelector(".theme-toggle");
       const prefersDarkScheme = window.matchMedia(
-        "(prefers-color-scheme: dark)"
+        "(prefers-color-scheme: dark)",
       );
 
       function setTheme(isDark) {
@@ -319,7 +428,7 @@
             }
           });
         },
-        { threshold: 0.1 }
+        { threshold: 0.1 },
       );
 
       document.querySelectorAll(".project-card").forEach((card) => {
