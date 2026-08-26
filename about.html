@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -36,7 +36,9 @@
         max-width: 1200px;
         margin: 0 auto;
         padding: 2rem;
-        transition: background-color var(--transition), color var(--transition);
+        transition:
+          background-color var(--transition),
+          color var(--transition);
       }
 
       .top-nav {
@@ -178,7 +180,9 @@
         padding: 0.5rem;
         font-size: 1.2rem;
         color: var(--text-color);
-        transition: transform var(--transition), color var(--transition);
+        transition:
+          transform var(--transition),
+          color var(--transition);
         border-radius: 50%;
         width: 40px;
         height: 40px;
@@ -336,44 +340,24 @@
             Hi there! I'm Yubraj Acharya, an IT enthusiast with a growing
             passion for web development and programming. While I might not call
             myself a pro just yet, I have a good foundation in languages like
-            HTML5, CSS, JavaScript, C, C++ and I'm constantly sharpening my
-            skills as I explore the exciting world of technology.
-            <!-- <br /><br />
-            I enjoy working on web applications, experimenting with coding
-            projects, and learning through hands-on experience. This blog is
-            where I document my journey, sharing what I've learned along the
-            way—from coding tips to challenges I've overcome—in hopes of
-            connecting with and inspiring others on a similar path. -->
+            HTML5, CSS, JavaScript, C, and C++. I enjoy experimenting with
+            coding projects and documenting my journey on this blog—sharing tips
+            and challenges in hopes of inspiring others on a similar path.
             <br /><br />
-            When I'm not coding, you'll often find me staying curious about new
-            tech, exploring tutorials, or dreaming up my next project idea
-            (preferably with a cup of coffee in hand). Thank you for stopping
-            by—I'm thrilled to have you join me on this learning adventure!
+            Right now, I'm actively expanding my skill set by learning Flutter
+            for cross-platform app development. When I'm not coding or exploring
+            tutorials, you'll find me dreaming up my next project idea with a
+            cup of coffee in hand. Thank you for stopping by—I'm thrilled to
+            have you join me on this learning adventure!
           </p>
         </section>
 
         <section class="content-section">
           <h2>Skills</h2>
           <div class="skills-grid">
-            <div class="skill-item" data-skill="HTML5">
-              <i class="fab fa-html5"></i>
-              <span>HTML5</span>
-            </div>
-            <div class="skill-item" data-skill="CSS3">
-              <i class="fab fa-css3-alt"></i>
-              <span>CSS3</span>
-            </div>
-            <div class="skill-item" data-skill="JavaScript">
-              <i class="fab fa-js"></i>
-              <span>JavaScript</span>
-            </div>
-            <div class="skill-item" data-skill="C">
-              <i class="fas fa-code"></i>
-              <span>C</span>
-            </div>
-            <div class="skill-item" data-skill="C++">
-              <i class="fas fa-code"></i>
-              <span>C++</span>
+            <div class="skill-item" data-skill="Flutter">
+              <i class="fas fa-mobile-alt"></i>
+              <span>Flutter</span>
             </div>
           </div>
         </section>
@@ -425,13 +409,10 @@
 
           <div class="experience-item">
             <div class="experience-header">
-              <p><strong>Front-end Web Developer</strong> (2024-present)</p>
+              <p><strong>App development</strong></p>
             </div>
             <div class="experience-details">
-              <p>
-                Developed and maintained webpages using modern HTML, CSS and
-                JavaScript.
-              </p>
+              <p>Cross-platform app development using flutter framework.</p>
             </div>
           </div>
         </section>
@@ -483,7 +464,7 @@
       // Dark mode toggle
       const themeToggle = document.querySelector(".theme-toggle");
       const prefersDarkScheme = window.matchMedia(
-        "(prefers-color-scheme: dark)"
+        "(prefers-color-scheme: dark)",
       );
 
       function setTheme(isDark) {
@@ -529,7 +510,7 @@
             }
           });
         },
-        { threshold: 0.1 }
+        { threshold: 0.1 },
       );
 
       document.querySelectorAll(".content-section").forEach((section) => {
